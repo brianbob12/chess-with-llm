@@ -104,7 +104,7 @@ The algorithm then explored the two game states and since the depth was 1, it ev
 
 The LLM produced a lower score for D6 which indicates it is a worse state for the white player. The algorithm then chose D6 as the move to play.
 
-Note that each game state is evaluated on it's own without considering the other game states. This allows the result to be cached for future use.
+Note that each game state is evaluated on it's own without considering the other game states allowing the result to be cached for future use.
 
 If the depth had been higher than 1 and the algorithm had budget to do so, it would have explored the game states resulting from the white player's most likely moves and so on.
 
