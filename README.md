@@ -84,13 +84,13 @@ Example:
 
 - The count of each type of piece on the board as a json object.
 
-- A list of each piece's position on the board as a list for white and a list for black.
+- A list of each piece's position on the board
 
 - The move history in algebraic notation separated by spaces.
 
 - Who's turn it is to play
 
-This information is fed back into the LLM along with the generate description for the successor and evaluation tasks.
+This information is fed back into the LLM along with the generated description for the successor and evaluation tasks.
 
 ### Example
 
@@ -100,7 +100,7 @@ For the following example, GPT-4 was playing black with a max depth of 1.
 
 The LLM specified the two cells marked in red as the most likely moves to be played next by an expert player.
 
-The algorithm then explored the two game states and since the depth was 1, it evaluated the game states using the LLM.
+The algorithm then explored the two game states and since the depth was 1, it evaluated those games states without exploring further.
 
 The LLM produced a lower score for D6 which indicates it is a worse state for the white player. The algorithm then chose D6 as the move to play.
 
