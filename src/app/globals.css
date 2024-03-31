@@ -26,8 +26,58 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+span {
+  font-family: monospace;
+  font-weight: bold;
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.turn-pill {
+  padding: 8px 16px;
+  border-radius: 20px;
+  border-color: grey;
+  border-width:1px;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: monospace;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.turn-pill:hover {
+  opacity: 0.8;
+}
+
+.turn-pill-white {
+  background-color: white;
+  color: black;
+}
+
+.turn-pill-black {
+  background-color: black;
+  color: white;
+}
+
+.turn-pill-dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border-width: 1px;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.turn-pill-dot-white {
+  background-color: white;
+  border-color: black;
+}
+
+.turn-pill-dot-black {
+  background-color: black;
+  border-color: white;
 }
